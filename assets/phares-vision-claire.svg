@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 320" aria-hidden="true">
+  <defs>
+    <radialGradient id="lamp" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#fffaf0" stop-opacity=".95"/><stop offset=".08" stop-color="#fff0cc" stop-opacity=".78"/><stop offset=".24" stop-color="#e5c27b" stop-opacity=".30"/><stop offset=".62" stop-color="#e5c27b" stop-opacity=".07"/><stop offset="1" stop-color="#e5c27b" stop-opacity="0"/></radialGradient>
+    <radialGradient id="bloom" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#e9c97b" stop-opacity=".20"/><stop offset="1" stop-color="#e9c97b" stop-opacity="0"/></radialGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#f7efd8" stop-opacity=".16"/><stop offset="1" stop-color="#f7efd8" stop-opacity="0"/></linearGradient>
+  </defs>
+  <ellipse cx="258" cy="125" rx="160" ry="138" fill="url(#bloom)"/><ellipse cx="302" cy="125" rx="160" ry="138" fill="url(#bloom)"/>
+  <ellipse cx="244" cy="121" rx="124" ry="91" fill="url(#lamp)"/><ellipse cx="316" cy="121" rx="124" ry="91" fill="url(#lamp)"/>
+  <path d="M152 160c14-39 42-60 80-67h96c38 7 66 28 80 67l-20 18H172z" fill="url(#body)"/>
+  <path d="M184 158c17-27 38-42 65-47h62c27 5 48 20 65 47" fill="none" stroke="#fff3d3" stroke-opacity=".20" stroke-width="2" stroke-linecap="round"/>
+  <path d="M236 125h-24M348 125h-24" stroke="#fff8e7" stroke-opacity=".72" stroke-width="5" stroke-linecap="round"/>
+  <g stroke="#f4dfac" stroke-opacity=".62" stroke-width="4" stroke-linecap="round">
+    <path d="M196 152l-7 10"/><path d="M184 170l-12 18"/>
+    <path d="M364 152l7 10"/><path d="M376 170l12 18"/>
+  </g>
+</svg>
