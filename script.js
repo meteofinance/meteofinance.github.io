@@ -28,5 +28,5 @@ const indyLinks = { secure: '#' };
 document.querySelectorAll('[data-payment]').forEach(link => {
   const url = indyLinks[link.dataset.payment];
   if (url !== '#') link.href = url;
-  else link.addEventListener('click', event => { event.preventDefault(); alert('Vous n'avez aucun règlement en attente.'); });
+  else link.addEventListener('click', event => { event.preventDefault(); alert('Vous n\'avez aucun règlement en attente.'); });
 });
