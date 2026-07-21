@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <!-- Encodage -->
+  <meta charset="UTF-8" />
+
+  <!-- Responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Météo Finance | Cabinet de conseil financier</title>
+  <meta
+    name="description"
+    content="Page d'accueil."
+  />
+
+  <link rel="canonical" href="https://meteofinance.github.io/" />
+
+  <!-- Open Graph (Facebook, LinkedIn, WhatsApp...) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Météo Finance" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:title" content="Météo Finance | Cabinet de conseil financier" />
+  <meta
+    property="og:description"
+    content="Page d'acceuil."
+  />
+  <meta property="og:url" content="https://meteofinance.github.io/" />
+  <meta
+    property="og:image"
+    content="https://meteofinance.github.io/assets/logo-meteo-finance-dark.png"
+  />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    name="twitter:title"
+    content="Météo Finance | Cabinet de conseil financier"
+  />
+  <meta
+    name="twitter:description"
+    content="Page d'acceuil."
+  />
+  <meta
+    name="twitter:image"
+    content="https://meteofinance.github.io/assets/logo-meteo-finance-dark.png"
+  />
+
+  <!-- Icône -->
+  <link rel="icon" href="assets/favicon.ico" />
+
+  <!-- Polices -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Baskerville:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Initialisation du thème -->
+  <script>
+    try {
+      document.documentElement.dataset.theme =
+        new URLSearchParams(location.search).get("theme") ||
+        localStorage.getItem("theme") ||
+        "light";
+    } catch {
+      document.documentElement.dataset.theme = "light";
+    }
+  </script>
+
+  <!-- Feuille de style -->
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="market-ticker.css" />
+  <link rel="stylesheet" href="cartographie-adjustments.css" />
+
+  <!-- Script -->
+  <script defer src="theme.js"></script>
+</head>
+<body>
+  <header class="header" id="accueil">
+    <a class="logo" href="index.html" aria-label="Météo Finance — retour en haut de page"><img src="assets/logo-meteo-finance-dark.png" data-theme-logo data-light-logo="assets/logo-meteo-finance-dark.png" data-dark-logo="assets/logo-meteo-finance-dark.png" alt="Météo Finance" /></a>
+    <button class="menu-button" aria-label="Ouvrir le menu" aria-expanded="false">Menu <span>+</span></button>
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="#expertise">Expertise</a><a href="#prestations">Accompagnement</a><a href="#societe">Météo Finance</a><a href="#reglement">Règlement</a><a class="nav-cta" href="#contact">Nous contacter</a>
+    </nav>
+    <button class="theme-button" data-theme-toggle type="button" aria-label="Activer le mode sombre" aria-pressed="false"><span aria-hidden="true">◐</span><span class="theme-button-text">Mode sombre</span></button>
+  </header>
+
+  <section class="market-ticker" aria-label="Évolution des marchés">
+    <div class="tradingview-widget-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <div class="tradingview-widget-copyright"><a href="https://fr.tradingview.com/markets/" rel="noopener nofollow" target="_blank"><span class="blue-text">Suivre les marchés</span></a><span class="trademark"> par TradingView</span></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+        {
+          "symbols": [
+            { "proName": "FOREXCOM:FRA40", "title": "CAC 40" },
+            { "proName": "FOREXCOM:SPXUSD", "title": "S&P 500" },
+            { "proName": "FOREXCOM:NSXUSD", "title": "Nasdaq 100" },
+            { "proName": "FX:EURUSD", "title": "EUR / USD" },
+            { "proName": "TVC:UKOIL", "title": "Brent" },
+            { "proName": "TVC:GOLD", "title": "Or" }
+          ],
+          "showSymbolLogo": false,
+          "colorTheme": "dark",
+          "isTransparent": false,
+          "displayMode": "adaptive",
+          "locale": "fr"
+        }
+      </script>
+    </div>
+  </section>
+
+  <main>
+    <section class="hero">
+      <div class="hero-glow"></div>
+      <div class="hero-content">
+        <p class="kicker"><span></span> Cabinet de conseil financier</p>
+        <h1>Vos prévisions financières<br/><em>comme la météo</em></h1>
+        <p class="hero-text">Météo Finance accompagne les entreprises et leurs dirigeants dans leurs décisions financières.</p>
+        <div class="hero-actions"><a href="#contact" class="btn btn-gold">Nous contacter <b>→</b></a><a href="#prestations" class="btn btn-ghost">Découvrir nos accompagnements</a></div>
+      </div>
+      <div class="hero-visual" aria-hidden="true"><div class="sun"></div><div class="arc arc-one"></div><div class="arc arc-two"></div><div class="arc arc-three"></div><div class="horizon"></div><div class="visual-caption"><span></span><span></span><span></span></div></div>
+      <p class="hero-disclaimer">En tant que société de conseil, Météo Finance apporte ses recommandations. Les décisions restent de votre responsabilité.</p>
+    </section>
+
+    <section class="signature"><p>Une lecture sereine de vos enjeux financiers</p><div></div><p>Analyse</p><i>✦</i><p>Perspective</p><i>✦</i><p>Décision</p></section>
+
+    <section class="section expertise" id="expertise">
+      <div class="intro-heading"><p class="kicker">Nos domaines d'expertise</p><h2><span>Des repères utiles,</span><span>pour chaque horizon.</span></h2></div>
+      <!--<div class="intro-copy"><p></p></div>-->
+      <div class="offers offers-professionals">
+        <article class="forecast-map">
+          <div class="forecast-map-heading"><p class="kicker"></p><!--<h3></h3><p></p>--></div>
+          <ol class="forecast-map-steps">
+            <li><div class="forecast-step-visual"><img src="assets/illustration-diagnostic.svg" alt="" /></div><h4>Diagnostic économique</h4><p>Taux obligataires, politiques publiques, concurrence internationale et grands équilibres.</p></li>
+            <li><div class="forecast-step-visual"><img src="assets/illustration-entreprise.svg" alt="" /></div><h4>Finance d'entreprise</h4><p>Analyses de KPI, financement, risques, marges et capacités d’investissement.</p></li>
+            <li><div class="forecast-step-visual"><img src="assets/illustration-marches.svg" alt="" /></div><h4>Marchés financiers</h4><p>Valorisations, liquidité, devises, matières premières et signaux de confiance.</p></li>
+            <li><div class="forecast-step-visual"><img src="assets/illustration-strategie.svg" alt="" /></div><h4>Stratégie</h4><p>Cycles économiques, fiscalité, réglementation et enjeux sectoriels</p></li>
+          </ol>
+        </article>
+      </div>
+      <!--<p class="mission-note"></p>-->
+    </section>
+
+    <section class="method" id="methode"><div class="method-title"><h2>Avancer avec<br/>une vision claire.</h2></div><div class="method-visual" aria-hidden="true"></div></section>
+
+    <section class="section pricing" id="prestations"><div class="pricing-heading"><p class="kicker">Nos accompagnements</p><h2>Un format adapté<br/>et sur mesure.</h2><p>La nature et le périmètre de chaque mission sont définis ensemble. Une proposition personnalisée vous est ensuite communiquée.</p></div><div class="pricing-list"><article><span>01</span><div><h3>Consultation initiale</h3><p>Un premier éclairage sur votre situation et vos attentes.</p></div></article><article><span>02</span><div><h3>Analyse financière personnalisée</h3><p>Une étude structurée autour de scénarios d'évolution à long terme adaptés à votre contexte.</p></div></article><article><span>03</span><div><h3>Restitution</h3><p>Météo de quantification des risques, mise en place d'outils et recommandation de stratégies pour guider vos décisions.</p></div></article><article><span>04</span><div><h3>Accompagnement longue durée</h3><p>Un regard régulier pour faire évoluer vos résultats dans le temps.</p></div></article></div></section>
+    <section class="company" id="societe"><div class="company-symbol"><div class="star">✦</div><p>MF</p></div><div class="company-text"><p class="kicker">Notre philosophie</p><h2>Apporter de la<br/>confiance.</h2><p>Fondée en 2019, Météo Finance est un cabinet de conseil financier indépendant proposant des prestations d'accompagnement aux entreprises et à leurs dirigeants.</p><p>Notre ambition est simple : vous donner une compréhension précise et une vision future de votre environnement financier, afin que vous puissiez agir avec autonomie et anticipation.</p><div class="principles"><span>Confiance</span><span>Transparence</span><span>Confidentialité</span></div></div></section>
+
+    <section class="payment" id="reglement"><div><p class="kicker">Espace règlement</p><h2>Simple, sécurisé,<br/>en toute transparence.</h2><p>Après validation de votre proposition, accédez à votre règlement en ligne via un lien de paiement Indy sécurisé.</p></div><div class="pay-links"><a data-payment="secure" href="#">Effectuer un règlement sécurisé <b>↗</b></a></div></section>
+
+    <section class="contact" id="contact"><div class="contact-intro"><p class="kicker">Nous contacter</p><h2>Échangeons sur<br/>votre projet.</h2><p>Présentez-nous votre besoin professionnel. Nous reviendrons vers vous dans les meilleurs délais.</p><a class="contact-email" href="mailto:meteofinance@outlook.com">meteofinance@outlook.com <span>↗</span></a></div><form id="contact-form"><div class="form-row"><label>Nom<input required name="nom" type="text" autocomplete="family-name" /></label><label>Prénom<input required name="prenom" type="text" autocomplete="given-name" /></label></div><div class="form-row"><label>Email<input required name="email" type="email" autocomplete="email" /></label><label>Téléphone<input name="telephone" type="tel" autocomplete="tel" /></label></div><label>Société<input required name="societe" type="text" autocomplete="organization" /></label><label>Objet de la demande<input required name="objet" type="text" placeholder="Ex. Analyse de la situation financière" /></label><label>Votre message<textarea required name="message" rows="4" placeholder="Décrivez-nous brièvement votre besoin."></textarea></label><label class="consent"><input required type="checkbox" /><span>J'accepte que mes informations soient utilisées afin de traiter ma demande, conformément à la politique de confidentialité.</span></label><button type="submit" class="btn btn-gold">Envoyer ma demande <b>→</b></button><p class="form-status" aria-live="polite"></p></form></section>
+  </main>
+  <footer><div class="footer-links"><a href="mentions-legales.html">Mentions légales</a><a href="politique-confidentialite.html">Politique de confidentialité</a><a href="conditions-generales-prestation.html">Conditions générales</a></div><small>© 2026 Météo Finance</small></footer>
+  <script src="script.js"></script>
+</body>
+</html>

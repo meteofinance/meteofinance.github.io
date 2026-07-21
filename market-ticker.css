@@ -1,0 +1,7 @@
+.market-ticker{height:auto;min-height:64px;padding:0;display:block;background:#11100e;overflow:hidden;position:sticky;top:94px;z-index:19}
+.market-ticker .tradingview-widget-container{width:100%;min-height:64px;background:#11100e}
+.market-ticker .tradingview-widget-container__widget{min-height:48px}
+.market-ticker .tradingview-widget-copyright{min-height:16px;padding:1px 12px 5px;color:#908574;font:9px "DM Sans",sans-serif;text-align:right}
+.market-ticker .tradingview-widget-copyright a{color:#c6bba9;text-decoration:none}
+.section[id],.method[id],.company[id],.pricing[id],.payment[id],.contact[id]{scroll-margin-top:174px}
+@media(max-width:800px){.market-ticker{min-height:60px;top:78px}.market-ticker .tradingview-widget-container{min-height:60px}.market-ticker .tradingview-widget-copyright{font-size:8px;padding-bottom:4px}.section[id],.method[id],.company[id],.pricing[id],.payment[id],.contact[id]{scroll-margin-top:150px}}
