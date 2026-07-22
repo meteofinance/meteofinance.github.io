@@ -1,0 +1,25 @@
+.market-ticker{height:40px;min-height:40px;padding:0;display:flex;align-items:center;background:#11100e;color:#f4ede1;overflow:hidden;position:relative;z-index:1;font:600 12px/1 "DM Sans",sans-serif;letter-spacing:.04em}
+.market-ticker__viewport{flex:1;min-width:0;overflow:hidden}
+.market-ticker__track{display:flex;align-items:center;width:max-content;margin:0;white-space:nowrap;animation:market-ticker-scroll 36s linear infinite}
+.market-ticker__track span{display:inline-block;padding-right:64px}
+.market-ticker:hover .market-ticker__track{animation-play-state:paused}
+@keyframes market-ticker-scroll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* DÉBUT TEST ACTUALITÉ : supprimez ce bloc pour retirer le style du libellé fixe. */
+.market-ticker__label{align-self:stretch;display:flex;align-items:center;flex:0 0 auto;padding:0 20px;background:#201d18;color:#d2a74d;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;border-right:1px solid rgba(210,167,77,.45)}
+/* FIN TEST ACTUALITÉ */
+
+.section[id],.method[id],.company[id],.pricing[id],.payment[id],.contact[id]{scroll-margin-top:94px}
+@media(max-width:1050px){.market-ticker{height:36px;min-height:36px;font-size:11px}.market-ticker__label{padding:0 14px;font-size:10px}.market-ticker__track{animation-duration:30s}.section[id],.method[id],.company[id],.pricing[id],.payment[id],.contact[id]{scroll-margin-top:78px}}
+@media(prefers-reduced-motion:reduce){.market-ticker__track{animation:none;padding-left:16px}.market-ticker__track span[aria-hidden="true"]{display:none}}
+
+/* Ancien habillage de la frise TradingView, conservé pour référence.
+.market-ticker{height:auto;min-height:64px;padding:0;display:block;background:#11100e;overflow:hidden;position:relative;z-index:1}
+.market-ticker .tradingview-widget-container{width:100%;min-height:64px;background:#11100e}
+.market-ticker .tradingview-widget-container__widget{min-height:48px}
+.market-ticker .tradingview-widget-copyright{min-height:16px;padding:1px 12px 5px;color:#908574;font:9px "DM Sans",sans-serif;text-align:right}
+.market-ticker .tradingview-widget-copyright a{color:#c6bba9;text-decoration:none}
+*/
+
+/* Garde-fous responsive pour Chrome Android, Edge et Firefox. */
+html{-webkit-text-size-adjust:100%;text-size-adjust:100%}body{overflow-x:hidden}img,svg,video,canvas{max-width:100%;height:auto}input,select,textarea,button{max-width:100%}@media(max-width:420px){.menu-button{font-size:0}.menu-button span{font-size:20px;margin:0}}
