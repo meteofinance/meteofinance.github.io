@@ -160,48 +160,57 @@ li{
   max-width:780px;
 }
 
-ul{
-  padding-left:20px;
-}
-
 a{
   color:var(--blue);
 }
 
 
 /* ================================
-   RESPONSABLE LÉGAL
+   LISTE DES INFORMATIONS LÉGALES
    ================================ */
 
 /*
-   On désactive la puce automatique du <li>
-   car le point est maintenant écrit directement
-   dans le HTML.
+   On désactive les puces natives du navigateur
+   pour pouvoir utiliser exactement la même puce
+   sur les quatre lignes.
+*/
+
+.legal-list{
+  list-style:none;
+  padding-left:20px;
+}
+
+/*
+   Chaque ligne garde sa position normale.
+*/
+
+.legal-list > li{
+  position:relative;
+  max-width:780px;
+}
+
+/*
+   Même puce pour SIRET, RCS, TVA et
+   Responsable légal.
+*/
+
+.legal-list > li::before{
+  content:"•";
+  position:absolute;
+  left:-20px;
+  top:0;
+  font-size:1em;
+  line-height:inherit;
+}
+
+/*
+   IMPORTANT :
+   le <li> reste en affichage normal.
+   On ne met surtout pas display:flex ici.
 */
 
 .legal-responsible{
-  list-style:none !important;
-}
-
-
-/*
-   Point ajouté manuellement dans le HTML.
-*/
-
-.legal-bullet{
-  display:inline-block;
-  width:1em;
-  margin-left:-1.1em;
-  margin-right:.1em;
-}
-
-
-/*
-   Texte du responsable légal.
-*/
-
-.legal-responsible-text{
-  display:inline;
+  display:block;
 }
 
 
@@ -255,177 +264,4 @@ a{
 
 .legal-footer{
   background:var(--night);
-  padding:27px clamp(25px,7vw,120px);
-  color:#c6bba9;
-  font-size:11px;
-  text-align:center;
-}
-
-.legal-footer .footer-links{
-  display:flex;
-  justify-content:center;
-  flex-wrap:wrap;
-  gap:17px;
-}
-
-.legal-footer a{
-  color:#f4ede1;
-  text-decoration:none;
-  margin-right:0;
-}
-
-.legal-footer small{
-  display:block;
-  margin-top:17px;
-  padding-top:17px;
-  border-top:1px solid #554a36;
-}
-
-
-/* ================================
-   MODE SOMBRE
-   ================================ */
-
-html[data-theme="dark"]{
-  --blue:#faf4e8;
-  --night:#090908;
-  --gold:#e1b348;
-  --text:#d2c8b8;
-  --line:#4e4637;
-  --surface:#12110e;
-  --surface-muted:#211e18;
-  --soft-line:#39342a;
-}
-
-html[data-theme="dark"] .legal-header{
-  background:#0b0a09 !important;
-}
-
-html[data-theme="dark"] .legal-footer{
-  background:#090908;
-}
-
-html[data-theme="dark"] .placeholder{
-  color:#f0ca75;
-  background:#2d2617;
-}
-
-
-/* ================================
-   RESPONSIVE
-   ================================ */
-
-@media(max-width:800px){
-
-  .legal-header{
-    min-height:78px;
-    padding:0 clamp(22px,5vw,74px);
-    gap:9px;
-    display:grid;
-    grid-template-columns:minmax(0,1fr) auto auto;
-  }
-
-  .legal-logo{
-    width:238px;
-    height:65px;
-    background-position:left -15px;
-    background-size:238px auto;
-  }
-
-  .legal-logo img{
-    width:238px;
-    top:-15px;
-  }
-
-  .legal-header>a:last-of-type{
-    display:grid;
-    margin-left:0;
-    width:32px;
-    height:32px;
-    place-items:center;
-    font-size:0;
-  }
-
-  .legal-header>a:last-of-type span{
-    font-size:20px !important;
-    margin:0 !important;
-  }
-
-  .theme-button{
-    padding:7px;
-  }
-
-  .theme-button-text{
-    display:none;
-  }
-
-  .theme-button span:first-child{
-    margin:0;
-  }
-}
-
-
-@media(min-width:801px) and (max-width:1050px){
-
-  .legal-header{
-    min-height:78px;
-    padding:0 clamp(22px,5vw,74px);
-    gap:9px;
-    display:grid;
-    grid-template-columns:minmax(0,1fr) auto auto;
-  }
-
-  .legal-logo{
-    width:238px;
-    height:65px;
-    background-position:left -15px;
-    background-size:238px auto;
-  }
-
-  .legal-logo img{
-    width:238px;
-    top:-15px;
-  }
-
-  .legal-header>a:last-of-type{
-    display:grid;
-    margin-left:0;
-    width:32px;
-    height:32px;
-    place-items:center;
-    font-size:0;
-  }
-
-  .legal-header>a:last-of-type span{
-    font-size:20px !important;
-    margin:0 !important;
-  }
-
-  .theme-button{
-    padding:7px;
-  }
-
-  .theme-button-text{
-    display:none;
-  }
-
-  .theme-button span:first-child{
-    margin:0;
-  }
-}
-
-
-@media(max-width:700px){
-
-  .page{
-    padding-top:58px;
-  }
-
-  .legal-logo{
-    width:238px;
-    height:65px;
-    background-position:left -15px;
-    background-size:238px auto;
-  }
-}
-```
+  padding:27px clamp(25
