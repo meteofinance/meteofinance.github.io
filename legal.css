@@ -164,52 +164,44 @@ ul{
   padding-left:20px;
 }
 
-.notice{
-  background:var(--surface-muted);
-  border-left:3px solid var(--gold);
-  padding:17px 20px;
-  color:var(--text);
-  font-size:14px;
-}
-
-.placeholder{
-  font-weight:700;
-  color:#8b6517;
-  background:#fff7dc;
-  padding:1px 4px;
-}
-
 a{
   color:var(--blue);
 }
 
 
 /* ================================
-   LISTE DES INFORMATIONS LÉGALES
+   RESPONSABLE LÉGAL
    ================================ */
 
-.legal-list{
-  padding-left:20px;
-}
-
 /*
-   IMPORTANT :
-   Le <li> reste un véritable élément de liste.
-   On ne lui applique surtout pas display:flex,
-   sinon le marqueur peut disparaître.
+   On désactive la puce automatique du <li>
+   car le point est maintenant écrit directement
+   dans le HTML.
 */
 
 .legal-responsible{
-  display:list-item !important;
-  list-style-type:disc !important;
+  list-style:none !important;
 }
 
+
 /*
-   On force également l'affichage de la puce.
+   Point ajouté manuellement dans le HTML.
 */
 
-.legal-responsible::marker{
-  content:"•" !important;
+.legal-bullet{
+  display:inline-block;
+  width:1em;
+  margin-left:-1.1em;
+  margin-right:.1em;
+}
+
+
+/*
+   Texte du responsable légal.
+*/
+
+.legal-responsible-text{
+  display:inline;
 }
 
 
@@ -422,10 +414,6 @@ html[data-theme="dark"] .placeholder{
   }
 }
 
-
-/* ================================
-   MOBILE
-   ================================ */
 
 @media(max-width:700px){
 
