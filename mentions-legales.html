@@ -1,169 +1,116 @@
 ```html
-<!doctype html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Mentions légales | Météo Finance</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
-  <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
-
-  <script>
-    try {
-      document.documentElement.dataset.theme =
-        new URLSearchParams(location.search).get('theme') ||
-        localStorage.getItem('theme') ||
-        'light';
-    } catch (error) {
-      document.documentElement.dataset.theme = 'light';
-    }
-  </script>
+  <title>Mentions légales — Météo Finance</title>
 
   <link rel="stylesheet" href="legal.css">
-  <script defer src="theme.js"></script>
 </head>
 
 <body>
 
-<header class="legal-header">
+  <header class="site-header">
+    <div class="header-inner">
 
-  <a class="legal-logo" href="index.html">
-    <img
-      src="assets/logo-meteo-finance-light.png"
-      data-theme-logo
-      data-light-logo="assets/logo-meteo-finance-light.png"
-      data-dark-logo="assets/logo-meteo-finance-dark.png"
-      alt="Météo Finance">
-  </a>
+      <a href="/" class="site-logo">
+        Météo Finance
+      </a>
 
-  <a href="index.html">
-    <span>←</span>Retour au site
-  </a>
-
-  <button
-    class="theme-button"
-    data-theme-toggle
-    type="button"
-    aria-label="Activer le mode sombre"
-    aria-pressed="false">
-    <span aria-hidden="true">◐</span>
-    <span class="theme-button-text">Mode sombre</span>
-  </button>
-
-</header>
-
-
-<main class="page">
-
-  <p class="eyebrow">Informations légales</p>
-
-  <h1>Mentions légales</h1>
-
-
-  <h2>Éditeur du site</h2>
-
-  <p>
-    Le site « Météo Finance » est édité par Météo Finance,
-    société par actions simplifiée unipersonnelle au capital de
-    1 000 euros, dont le siège social est situé 21-23, rue Massue,
-    94300 Vincennes.
-  </p>
-
-  <ul class="legal-list">
-
-    <li>SIRET : 851 900 209 00012</li>
-
-    <li>RCS : Créteil</li>
-
-    <li>Numéro de TVA intracommunautaire : FR26 851 900 209</li>
-
-    <li class="legal-responsible">
-
-      <span class="legal-bullet" aria-hidden="true">•</span>
-
-      <span class="legal-responsible-text">
-        Responsable légal : M. Patrice GREMION
-
-        <a
-          class="linkedin-link"
-          href="https://www.linkedin.com/in/patrice-gr%C3%A9mion-350199128/"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Voir le profil LinkedIn de Patrice Grémion">
-
-          <svg viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M5.37 3.3a2.3 2.3 0 1 1-4.6 0 2.3 2.3 0 0 1 4.6 0ZM.98 8.05h4.3V23h-4.3V8.05ZM8 8.05h4.12v2.04h.06c.57-1.09 1.98-2.24 4.08-2.24 4.37 0 5.18 2.88 5.18 6.62V23h-4.29v-7.53c0-1.8-.03-4.11-2.5-4.11-2.5 0-2.88 1.95-2.88 3.98V23H7.48V8.05H8Z"/>
-          </svg>
-
-          <span class="linkedin-link__text">LinkedIn</span>
-
+      <nav class="site-nav" aria-label="Navigation principale">
+        <a href="/">Accueil</a>
+        <a href="/mentions-legales.html" aria-current="page">
+          Mentions légales
         </a>
-      </span>
+      </nav>
 
-    </li>
-
-  </ul>
-
-
-  <h2>Hébergement</h2>
-
-  <p>
-    Le site est hébergé par GitHub Inc.
-  </p>
+    </div>
+  </header>
 
 
-  <h2>Propriété intellectuelle</h2>
+  <main class="legal-page">
 
-  <p>
-    Le contenu du site, notamment les textes, éléments graphiques,
-    logo, marques et visuels, est protégé par les droits de propriété
-    intellectuelle. Toute reproduction, représentation, adaptation ou
-    exploitation, totale ou partielle, sans autorisation écrite préalable
-    de Météo Finance est interdite.
-  </p>
+    <section class="legal-section">
+
+      <h1>Mentions légales</h1>
+
+      <h2>Éditeur du site</h2>
+
+      <p>
+        Le présent site est édité par Météo Finance.
+      </p>
+
+      <ul class="legal-list">
+        <li>SIRET : 851 900 209 00012</li>
+
+        <li>RCS : Créteil</li>
+
+        <li>Numéro de TVA intracommunautaire : FR26 851 900 209</li>
+
+        <li class="legal-responsible">
+          Responsable légal : M. Patrice GREMION
+
+          <a
+            class="linkedin-link"
+            href="https://www.linkedin.com/in/patrice-gr%C3%A9mion-350199128/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Voir le profil LinkedIn de Patrice Grémion"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path d="M5.37 3.3a2.3 2.3 0 1 1-4.6 0 2.3 2.3 0 0 1 4.6 0ZM.98 8.05h4.3V23h-4.3V8.05ZM8 8.05h4.12v2.04h.06c.57-1.09 1.98-2.24 4.08-2.24 4.37 0 5.18 2.88 5.18 6.62V23h-4.29v-7.53c0-1.8-.03-4.11-2.5-4.11-2.5 0-2.88 1.95-2.88 3.98V23H7.48V8.05H8Z"/>
+            </svg>
+
+            <span class="linkedin-link__text">
+              LinkedIn
+            </span>
+          </a>
+        </li>
+      </ul>
 
 
-  <h2>Responsabilité</h2>
+      <h2>Hébergement</h2>
 
-  <p>
-    Les informations présentes sur ce site sont fournies à titre indicatif.
-    Météo Finance s’efforce d’en assurer l’exactitude, sans pouvoir garantir
-    l’absence d’erreur ou d’omission. Les contenus ne constituent ni une
-    offre de produits financiers, ni une recommandation personnalisée
-    d’investissement, ni une exécution d’opérations financières.
-  </p>
-
-  <p>
-    Météo Finance fournit des prestations de conseil visant à éclairer la
-    réflexion de ses clients. Ces derniers demeurent ensuite les seuls
-    responsables des décisions à prendre et de leurs mises en œuvre.
-  </p>
+      <p>
+        Les informations relatives à l'hébergement du site sont indiquées
+        ci-dessous.
+      </p>
 
 
-  <h2>Contact</h2>
+      <h2>Propriété intellectuelle</h2>
 
-  <p>
-    Pour toute question concernant le site, vous pouvez utiliser le
-    formulaire de contact.
-  </p>
+      <p>
+        L'ensemble des éléments présents sur ce site, notamment les textes,
+        images, graphiques, logos et contenus, est protégé par les dispositions
+        applicables en matière de propriété intellectuelle.
+      </p>
 
-</main>
+
+      <h2>Responsabilité</h2>
+
+      <p>
+        Les informations publiées sur ce site sont fournies à titre informatif.
+        Malgré le soin apporté à leur mise à jour, aucune garantie ne peut être
+        donnée quant à leur exactitude, leur exhaustivité ou leur actualité.
+      </p>
+
+    </section>
+
+  </main>
 
 
-<footer class="legal-footer">
-
-  <div class="footer-links">
-    <a href="mentions-legales.html">Mentions légales</a>
-    <a href="politique-confidentialite.html">Politique de confidentialité</a>
-    <a href="conditions-generales-prestation.html">Conditions générales</a>
-  </div>
-
-  <small>
-    © 2026 Météo Finance SASU. Tous droits réservés.
-  </small>
-
-</footer>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>
+        © Météo Finance — Tous droits réservés.
+      </p>
+    </div>
+  </footer>
 
 </body>
 </html>
