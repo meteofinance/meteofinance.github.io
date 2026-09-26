@@ -6,7 +6,7 @@ html[data-theme="dark"] .header{background:#0b0a09}
 html[data-theme="dark"] .nav-cta{color:#11100e!important;background:var(--gold)}
 html[data-theme="dark"] .btn-gold{color:#11100e}
 html[data-theme="dark"] .offers article:not(.dark){background:#211e18}
-html[data-theme="dark"] .company-symbol,html[data-theme="dark"] .company-symbol p{background:#211e18}
+html[data-theme="dark"] .company-symbol{background:#211e18}
 html[data-theme="dark"] .method,html[data-theme="dark"] footer{background:#090908}
 html[data-theme="dark"] .btn-ghost{border-color:#645a48}
 html[data-theme="dark"] .pay-links a{border-color:#675c47}
